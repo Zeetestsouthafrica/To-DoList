@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #b7cdc8;
+    padding: 10px;
+}
+
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #337061;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    
+}
+
+.todo-app h2 {
+    color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+    
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #a4866d;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background: #b7cdc8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+li::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    background: #edeef0;
+    border-radius: 50%;
+}
+
+ul li.checked{
+    color: #718783;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    background: #a4866d;
+    border-radius: 50%;
+}
+
+ul li.checked:after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(315deg);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #337061;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span :hover {
+    background: #b7cdc8;
+}
+
+
